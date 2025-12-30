@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Olufayo Prosper Adeolu Portfolio</title>
+<style>
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f6f8;
+    color: #333;
+    scroll-behavior: smooth;
+}
+
+/* Header */
+header {
+    background-color: #1E3A8A;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.2em;
+}
+
+/* Sections */
+section {
+    padding: 40px 20px;
+    margin: 20px auto;
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.8s ease;
+}
+
+section.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+h2 {
+    color: #1E3A8A;
+    margin-bottom: 20px;
+}
+
+/* Skills badges */
+.skills-list li {
+    display: inline-block;
+    background-color: #e0f0ff;
+    color: #1E3A8A;
+    padding: 6px 12px;
+    margin: 5px;
+    border-radius: 20px;
+    font-size: 0.9em;
+}
+
+/* Cards */
+.project-card, .work-card, .article-card {
+    background-color: #f1f5f9;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 5px solid #1E3A8A;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover, .work-card:hover, .article-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+
+blockquote {
+    font-style: italic;
+    color: #555;
+    margin-top: 10px;
+    border-left: 3px solid #1E3A8A;
+    padding-left: 10px;
+}
+
+/* Inputs and Buttons */
+input, textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 12px 25px;
+    background-color: #1E3A8A;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #2a55c0;
+}
+
+/* Footer */
+footer {
+    background-color: #1E3A8A;
+    color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+footer a.cta-btn {
+    display: inline-block;
+    margin: 10px 0;
+    padding: 12px 25px;
+    background-color: #FFA500;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+footer a.cta-btn:hover {
+    background-color: #ffb84d;
+}
+
+footer a.social-link {
+    color: #FFA500;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    header h1 { font-size: 2em; }
+    header p { font-size: 1em; }
+    section { padding: 20px; margin: 10px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Hi, I'm Olufayo Prosper Adeolu</h1>
+<p>Virtual Assistant | Social Media Manager | SEO Specialist</p>
+</header>
+
+<section id="about">
+<h2>About Me</h2>
+<p>Hi! I’m Olufayo Prosper Adeolu – a Virtual Assistant, Social Media Manager, and SEO Specialist. I help businesses grow online, save time, and reach the right audience with smart strategies and attention to detail.</p>
+</section>
+
+<section id="education">
+<h2>Education</h2>
+<ul>
+<li><strong>Ladoke Akintola University of Technology, Ogbomosho</strong> – Currently studying</li>
+</ul>
+</section>
+
+<section id="skills">
+<h2>Skills</h2>
+<h3>Core Skills</h3>
+<ul class="skills-list">
+<li>Virtual Assistance</li>
+<li>Social Media Management</li>
+<li>SEO Specialist</li>
+<li>Content Marketing</li>
+<li>Traffic Generation</li>
+<li>Lead Generation</li>
+<li>Social Media Marketing</li>
+</ul>
+
+<h3>Tools / Platforms</h3>
+<ul class="skills-list">
+<li>Google Workspace</li>
+<li>Trello / Asana</li>
+<li>Canva / Adobe Spark</li>
+<li>Hootsuite / Buffer</li>
+<li>WordPress / Squarespace</li>
+<li>Google Analytics / SEMrush</li>
+</ul>
+</section>
+
+<section id="work">
+<h2>Work Experience & Testimonials</h2>
+<div class="work-card">
+<h3>Social Media Marketing & Traffic Generation for Kaylen Bogumil</h3>
+<p>Managed social media campaigns and generated traffic to increase engagement and reach.</p>
+<blockquote>"Olufayo’s work on my social media and traffic generation was amazing! My engagement and leads grew faster than I expected." – Kaylen Bogumil</blockquote>
+</div>
+
+<div class="work-card">
+<h3>Social Media Marketing for Lauren Elizabeth</h3>
+<p>Managed campaigns, optimized content, and grew online engagement.</p>
+<blockquote>"Olufayo transformed my online presence! Engagement skyrocketed and my brand finally looks professional." – Lauren Elizabeth</blockquote>
+</div>
+</section>
+
+<section id="articles">
+<h2>Articles</h2>
+<div class="article-card">
+<h3>Tips to Grow Your Social Media Engagement</h3>
+<p>Learn effective strategies to increase reach, likes, and interactions on any platform.</p>
+<a href="https://twitter.com/prosper_media_" target="_blank">Read More</a>
+</div>
+
+<div class="article-card">
+<h3>SEO Basics for Small Businesses</h3>
+<p>A simple guide to get your website ranking on Google and attract organic traffic.</p>
+<a href="https://www.tiktok.com/@prosper_media_" target="_blank">Read More</a>
+</div>
+</section>
+
+<section id="contact">
+<h2>Contact Me</h2>
+<form id="contact-form">
+<input type="text" placeholder="Your Name" id="name" required>
+<input type="email" placeholder="Your Email" id="email" required>
+<textarea placeholder="Your Message" id="message" required></textarea>
+<button type="submit">Send</button>
+</form>
+<p id="status"></p>
+</section>
+
+<footer>
+<p>&copy; 2025 Olufayo Prosper Adeolu</p>
+<a href="https://www.tiktok.com/@prosper_media_" target="_blank" class="cta-btn">Hire Me</a>
+<br><br>
+<a href="https://twitter.com/prosper_media_" target="_blank" class="social-link">Twitter</a>
+<a href="https://www.tiktok.com/@prosper_media_" target="_blank" class="social-link">TikTok</a>
+</footer>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+<script>
+const firebaseConfig = {
+apiKey: "AIzaSyBj1QVC9_nSU5rpLvux0ztEN3SFLnOlz4E",
+authDomain: "myportfolio-eef0d.firebaseapp.com",
+projectId: "myportfolio-eef0d",
+storageBucket: "myportfolio-eef0d.firebasestorage.app",
+messagingSenderId: "474357828788",
+appId: "1:474357828788:web:fed6be37c4e571e4381be1"
+};
+const app = firebase.initializeApp(firebaseConfig);
+const db = firebase.firestore();
+
+// Contact Form
+const contactForm = document.getElementById('contact-form');
+const status = document.getElementById('status');
+status.style.display = "block";
+
+contactForm.addEventListener('submit', function(e){
+  e.preventDefault();
+  const name = document.getElementById('name').value.trim();
+  const email = document.getElementById('email').value.trim();
+  const message = document.getElementById('message').value.trim();
+
+  if(!name || !email || !message){
+      status.style.color = "red";
+      status.textContent = "Please fill in all fields.";
+      return;
+  }
+
+  db.collection('messages').add({
+      name: name,
+      email: email,
+      message: message,
+      timestamp: new Date()
+  }).then(function(){
+      status.style.color = "green";
+      status.textContent = "Message sent successfully! ✅";
+      contactForm.reset();
+      setTimeout(() => { status.textContent = ""; }, 3000);
+  }).catch(function(error){
+      status.style.color = "red";
+      status.textContent = "Error sending message: " + error.message;
+  });
+});
+
+// Fade-in animation on scroll
+const sections = document.querySelectorAll('section');
+const observer = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if(entry.isIntersecting){
+      entry.target.classList.add('visible');
+    }
+  });
+}, { threshold: 0.1 });
+sections.forEach(section => observer.observe(section));
+</script>
+
+</body>
+  </html>
