@@ -3,309 +3,206 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Olufayo Prosper Adeolu Portfolio</title>
+<title>Olufayo Prosper Adeolu | Portfolio</title>
 <style>
-/* General Styles */
-body {
+  body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    line-height: 1.6;
-    background-color: #f4f6f8;
-    color: #333;
+    background: #f4f6f8;
+    color: #1f2937;
     scroll-behavior: smooth;
-}
+  }
 
-/* Header */
-header {
-    background-color: #1E3A8A;
-    color: #fff;
-    padding: 60px 20px;
-    text-align: center;
-}
-
-header h1 {
-    margin: 0;
-    font-size: 2.5em;
-}
-
-header p {
-    margin-top: 10px;
-    font-size: 1.2em;
-}
-
-/* Sections */
-section {
+  header {
+    background: linear-gradient(90deg, #2563eb, #9333ea);
+    color: white;
     padding: 40px 20px;
-    margin: 20px auto;
-    max-width: 800px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-    opacity: 0;
-    transform: translateY(20px);
-    transition: all 0.8s ease;
-}
-
-section.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-h2 {
-    color: #1E3A8A;
-    margin-bottom: 20px;
-}
-
-/* Skills badges */
-.skills-list li {
-    display: inline-block;
-    background-color: #e0f0ff;
-    color: #1E3A8A;
-    padding: 6px 12px;
-    margin: 5px;
-    border-radius: 20px;
-    font-size: 0.9em;
-}
-
-/* Cards */
-.project-card, .work-card, .article-card {
-    background-color: #f1f5f9;
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-    border-left: 5px solid #1E3A8A;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover, .work-card:hover, .article-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 15px rgba(0,0,0,0.2);
-}
-
-blockquote {
-    font-style: italic;
-    color: #555;
-    margin-top: 10px;
-    border-left: 3px solid #1E3A8A;
-    padding-left: 10px;
-}
-
-/* Inputs and Buttons */
-input, textarea {
-    width: 100%;
-    padding: 12px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
-}
-
-button {
-    padding: 12px 25px;
-    background-color: #1E3A8A;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background 0.3s ease;
-}
-
-button:hover {
-    background-color: #2a55c0;
-}
-
-/* Footer */
-footer {
-    background-color: #1E3A8A;
-    color: #fff;
     text-align: center;
-    padding: 30px 20px;
-}
+  }
 
-footer a.cta-btn {
+  nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  nav a:hover {
+    color: #fffb00;
+  }
+
+  section {
+    padding: 50px 20px;
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  h1, h2 {
+    color: #1f2937;
+  }
+
+  h2 {
+    border-left: 5px solid #2563eb;
+    padding-left: 10px;
+    margin-bottom: 20px;
+  }
+
+  .cta {
     display: inline-block;
-    margin: 10px 0;
+    background: linear-gradient(45deg, #9333ea, #2563eb);
+    color: white;
     padding: 12px 25px;
-    background-color: #FFA500;
-    color: #fff;
+    border-radius: 8px;
     text-decoration: none;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+
+  .cta:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
+
+  .project, .article {
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  }
+
+  footer {
+    background: #1f2937;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+  }
+
+  input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
     border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s ease;
-}
+    border: 1px solid #ccc;
+    font-size: 16px;
+  }
 
-footer a.cta-btn:hover {
-    background-color: #ffb84d;
-}
+  button {
+    background: linear-gradient(45deg, #9333ea, #2563eb);
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+  }
 
-footer a.social-link {
-    color: #FFA500;
-    margin: 0 10px;
-    text-decoration: none;
-    font-weight: bold;
-}
+  button:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  }
 
-/* Responsive */
-@media (max-width: 600px) {
-    header h1 { font-size: 2em; }
-    header p { font-size: 1em; }
-    section { padding: 20px; margin: 10px; }
-}
+  ul li {
+    margin-bottom: 10px;
+  }
+
+  p, li {
+    line-height: 1.6;
+  }
+
+  @media(max-width:768px){
+    nav a {
+      display:block;
+      margin: 10px 0;
+    }
+  }
 </style>
 </head>
 <body>
 
 <header>
-<h1>Hi, I'm Olufayo Prosper Adeolu</h1>
-<p>Virtual Assistant | Social Media Manager | SEO Specialist</p>
+  <h1>Olufayo Prosper Adeolu</h1>
+  <p>Virtual Assistant | Social Media Manager | SEO Specialist | Content Marketing</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#articles">Articles</a>
+    <a href="#contact">Contact</a>
+  </nav>
 </header>
 
 <section id="about">
-<h2>About Me</h2>
-<p>Hi! I’m Olufayo Prosper Adeolu – a Virtual Assistant, Social Media Manager, and SEO Specialist. I help businesses grow online, save time, and reach the right audience with smart strategies and attention to detail.</p>
-</section>
-
-<section id="education">
-<h2>Education</h2>
-<ul>
-<li><strong>Ladoke Akintola University of Technology, Ogbomosho</strong> – Currently studying</li>
-</ul>
+  <h2>About Me</h2>
+  <p>Hello! I’m Olufayo Prosper Adeolu, a professional virtual assistant, social media manager, and SEO specialist. I help brands grow online by generating traffic, creating engaging content, and optimizing visibility across social media and search engines. I’m currently studying at Ladoke Akintola University of Technology, Ogbomosho.</p>
 </section>
 
 <section id="skills">
-<h2>Skills</h2>
-<h3>Core Skills</h3>
-<ul class="skills-list">
-<li>Virtual Assistance</li>
-<li>Social Media Management</li>
-<li>SEO Specialist</li>
-<li>Content Marketing</li>
-<li>Traffic Generation</li>
-<li>Lead Generation</li>
-<li>Social Media Marketing</li>
-</ul>
-
-<h3>Tools / Platforms</h3>
-<ul class="skills-list">
-<li>Google Workspace</li>
-<li>Trello / Asana</li>
-<li>Canva / Adobe Spark</li>
-<li>Hootsuite / Buffer</li>
-<li>WordPress / Squarespace</li>
-<li>Google Analytics / SEMrush</li>
-</ul>
+  <h2>Skills & Tools</h2>
+  <ul>
+    <li>Social Media Marketing (Facebook, Instagram, X/Twitter, TikTok)</li>
+    <li>SEO & Traffic Generation</li>
+    <li>Content Marketing & Strategy</li>
+    <li>Tools: Canva, Buffer, Hootsuite, Google Analytics, Ahrefs, SEMrush</li>
+  </ul>
 </section>
 
-<section id="work">
-<h2>Work Experience & Testimonials</h2>
-<div class="work-card">
-<h3>Social Media Marketing & Traffic Generation for Kaylen Bogumil</h3>
-<p>Managed social media campaigns and generated traffic to increase engagement and reach.</p>
-<blockquote>"Olufayo’s work on my social media and traffic generation was amazing! My engagement and leads grew faster than I expected." – Kaylen Bogumil</blockquote>
-</div>
+<section id="projects">
+  <h2>Projects</h2>
 
-<div class="work-card">
-<h3>Social Media Marketing for Lauren Elizabeth</h3>
-<p>Managed campaigns, optimized content, and grew online engagement.</p>
-<blockquote>"Olufayo transformed my online presence! Engagement skyrocketed and my brand finally looks professional." – Lauren Elizabeth</blockquote>
-</div>
+  <div class="project">
+    <h3>Lauren Elizabeth - Social Media Marketing</h3>
+    <p>Managed social media accounts and optimized content strategy for increased engagement.</p>
+    <p><strong>Testimonial:</strong> "Olufayo is exceptional! My social media presence has grown tremendously." — Lauren Elizabeth</p>
+  </div>
+
+  <div class="project">
+    <h3>Kaylen Bogumil - Traffic Generation & Social Media Marketing</h3>
+    <p>Generated high-quality traffic and managed campaigns across multiple platforms.</p>
+    <p><strong>Testimonial:</strong> "Thanks to Olufayo, my traffic and engagement skyrocketed!" — Kaylen Bogumil</p>
+  </div>
+
 </section>
 
 <section id="articles">
-<h2>Articles</h2>
-<div class="article-card">
-<h3>Tips to Grow Your Social Media Engagement</h3>
-<p>Learn effective strategies to increase reach, likes, and interactions on any platform.</p>
-<a href="https://twitter.com/prosper_media_" target="_blank">Read More</a>
-</div>
+  <h2>Articles</h2>
 
-<div class="article-card">
-<h3>SEO Basics for Small Businesses</h3>
-<p>A simple guide to get your website ranking on Google and attract organic traffic.</p>
-<a href="https://www.tiktok.com/@prosper_media_" target="_blank">Read More</a>
-</div>
+  <div class="article">
+    <h3>How to Boost Your Brand on Social Media</h3>
+    <p>Learn simple strategies to increase engagement and grow your online presence...</p>
+    <a class="cta" href="articles/social-media-boost.html">Read More</a>
+  </div>
+
+  <div class="article">
+    <h3>SEO Tips for Beginners</h3>
+    <p>Optimize your website and content to rank higher on Google search results...</p>
+    <a class="cta" href="articles/seo-tips.html">Read More</a>
+  </div>
+
 </section>
 
 <section id="contact">
-<h2>Contact Me</h2>
-<form id="contact-form">
-<input type="text" placeholder="Your Name" id="name" required>
-<input type="email" placeholder="Your Email" id="email" required>
-<textarea placeholder="Your Message" id="message" required></textarea>
-<button type="submit">Send</button>
-</form>
-<p id="status"></p>
+  <h2>Contact Me</h2>
+  <form id="contact-form" action="https://formspree.io/f/xaqyzlkb" method="POST">
+    <input type="text" name="name" placeholder="Your Name" required>
+    <input type="email" name="email" placeholder="Your Email" required>
+    <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+    <button type="submit">Send Message</button>
+  </form>
+  <p style="text-align:center; margin-top:15px;">Or hire me directly on social media:</p>
+  <div style="text-align:center; margin-top:10px;">
+    <a class="cta" href="https://www.tiktok.com/@prosper_media_" target="_blank">Hire Me on TikTok</a>
+    <a class="cta" href="https://twitter.com/prosper_media_" target="_blank">Hire Me on X/Twitter</a>
+  </div>
 </section>
 
 <footer>
-<p>&copy; 2025 Olufayo Prosper Adeolu</p>
-<a href="https://www.tiktok.com/@prosper_media_" target="_blank" class="cta-btn">Hire Me</a>
-<br><br>
-<a href="https://twitter.com/prosper_media_" target="_blank" class="social-link">Twitter</a>
-<a href="https://www.tiktok.com/@prosper_media_" target="_blank" class="social-link">TikTok</a>
+  <p>© 2025 Olufayo Prosper Adeolu. All rights reserved.</p>
 </footer>
 
-<!-- Firebase -->
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
-<script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
-<script>
-const firebaseConfig = {
-apiKey: "AIzaSyBj1QVC9_nSU5rpLvux0ztEN3SFLnOlz4E",
-authDomain: "myportfolio-eef0d.firebaseapp.com",
-projectId: "myportfolio-eef0d",
-storageBucket: "myportfolio-eef0d.firebasestorage.app",
-messagingSenderId: "474357828788",
-appId: "1:474357828788:web:fed6be37c4e571e4381be1"
-};
-const app = firebase.initializeApp(firebaseConfig);
-const db = firebase.firestore();
-
-// Contact Form
-const contactForm = document.getElementById('contact-form');
-const status = document.getElementById('status');
-status.style.display = "block";
-
-contactForm.addEventListener('submit', function(e){
-  e.preventDefault();
-  const name = document.getElementById('name').value.trim();
-  const email = document.getElementById('email').value.trim();
-  const message = document.getElementById('message').value.trim();
-
-  if(!name || !email || !message){
-      status.style.color = "red";
-      status.textContent = "Please fill in all fields.";
-      return;
-  }
-
-  db.collection('messages').add({
-      name: name,
-      email: email,
-      message: message,
-      timestamp: new Date()
-  }).then(function(){
-      status.style.color = "green";
-      status.textContent = "Message sent successfully! ✅";
-      contactForm.reset();
-      setTimeout(() => { status.textContent = ""; }, 3000);
-  }).catch(function(error){
-      status.style.color = "red";
-      status.textContent = "Error sending message: " + error.message;
-  });
-});
-
-// Fade-in animation on scroll
-const sections = document.querySelectorAll('section');
-const observer = new IntersectionObserver(entries => {
-  entries.forEach(entry => {
-    if(entry.isIntersecting){
-      entry.target.classList.add('visible');
-    }
-  });
-}, { threshold: 0.1 });
-sections.forEach(section => observer.observe(section));
-</script>
-
 </body>
-  </html>
+</html>
