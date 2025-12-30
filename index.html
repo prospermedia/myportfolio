@@ -121,6 +121,10 @@
     }
   }
 </style>
+
+<!-- Google reCAPTCHA -->
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+
 </head>
 <body>
 
@@ -174,25 +178,31 @@
   <div class="article">
     <h3>How to Boost Your Brand on Social Media</h3>
     <p>Learn simple strategies to increase engagement and grow your online presence...</p>
-    <a class="cta" href="articles/social-media-boost.html">Read More</a>
+    <a class="cta" href="https://en.wikipedia.org/wiki/Social_media_marketing" target="_blank">Read More</a>
   </div>
 
   <div class="article">
     <h3>SEO Tips for Beginners</h3>
-    <p>Optimize your website and content to rank higher on Google search results...</p>
-    <a class="cta" href="articles/seo-tips.html">Read More</a>
+    <p>Optimize your website and content to rank higher on search engines...</p>
+    <a class="cta" href="https://en.wikipedia.org/wiki/Search_engine_optimization" target="_blank">Read More</a>
   </div>
 
 </section>
 
 <section id="contact">
   <h2>Contact Me</h2>
+  <!-- Standard form submission ensures reCAPTCHA works reliably -->
   <form id="contact-form" action="https://formspree.io/f/xaqyzlkb" method="POST">
     <input type="text" name="name" placeholder="Your Name" required>
     <input type="email" name="email" placeholder="Your Email" required>
     <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+
+    <!-- Google reCAPTCHA -->
+    <div class="g-recaptcha" data-sitekey="6LdJjDssAAAAAHaElpxBjuJTNkyku-9ie7kanUf7"></div>
+
     <button type="submit">Send Message</button>
   </form>
+
   <p style="text-align:center; margin-top:15px;">Or hire me directly on social media:</p>
   <div style="text-align:center; margin-top:10px;">
     <a class="cta" href="https://www.tiktok.com/@prosper_media_" target="_blank">Hire Me on TikTok</a>
